@@ -10,7 +10,6 @@ import CryptoCard from '@/components/CryptoCard';
 import NewsCard from '@/components/NewsCard';
 import NotificationToast from '@/components/NotificationToast';
 import { useWebSocket } from '@/services/websocket';
-
 export default function Dashboard() {
   const dispatch = useDispatch();
   const { weather, crypto, news } = useSelector((state) => state);

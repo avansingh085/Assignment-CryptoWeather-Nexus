@@ -2,10 +2,8 @@
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { updateCrypto } from '@/redux/cryptoSlice';
-
 export function useWebSocket() {
   const dispatch = useDispatch();
-
   useEffect(() => {
     const ws = new WebSocket('wss://ws.coincap.io/prices?assets=bitcoin,ethereum,binancecoin');
     ws.onmessage = (event) => {
