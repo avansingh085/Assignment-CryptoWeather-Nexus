@@ -5,5 +5,6 @@ export async function fetchWeatherData(cities) {
         `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${'796339042a71f863e30fe1d307f99b60'}&units=metric`
       ).then((res) => res.json())
     );
+    // console.log(Promise.all(promises))
     return Promise.all(promises);
   }
