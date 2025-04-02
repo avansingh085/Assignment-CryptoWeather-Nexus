@@ -6,7 +6,7 @@ CryptoWeather Nexus is a modern, multi-page dashboard that integrates real-time 
 
 Live Demo
 
-🔗 Deployed Application  https://assignment-crypto-weather-nexus.vercel.app/
+🔗 Deployed Application: https://assignment-crypto-weather-nexus.vercel.app/
 
 Features
 
@@ -80,12 +80,12 @@ Deployment: Vercel / Netlify
 
 Clone the Repository:
 
- git clone https://github.com/avansingh085/Assignment-CryptoWeather-Nexus.git
- cd Assignment-CryptoWeather-Nexus
+git clone https://github.com/avansingh085/Assignment-CryptoWeather-Nexus.git
+cd Assignment-CryptoWeather-Nexus
 
 Install Dependencies:
 
- npm install
+npm install
 
 Set Up Environment Variables:
 
@@ -97,7 +97,7 @@ NEXT_PUBLIC_NEWS_API_KEY=your_newsdata_api_key
 
 Run the Development Server:
 
- npm run dev
+npm run dev
 
 🔗 Open http://localhost:3000 in your browser.
 
@@ -140,6 +140,10 @@ WebSocket: Uses CoinCap WebSocket to fetch real-time BTC and ETH price updates.
 ⚠️ Issue: Partial API Failures
 
 ✅ Solution: Displaying fallback UI and retry mechanisms in case of API failure.
+
+🔁 Issue: Fetch Failure Due to Network Issues
+
+✅ Solution: Implemented a retry mechanism (up to 5 attempts) with a 1-second delay between retries for fetching weather, cryptocurrency, and news data.
 
 🚀 Future Improvements
 
