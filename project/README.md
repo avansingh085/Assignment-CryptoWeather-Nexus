@@ -6,7 +6,7 @@ CryptoWeather Nexus is a modern, multi-page dashboard that integrates real-time 
 
 Live Demo
 
-Deployed Application (Replace with actual deployed link)
+Deployed Application https://assignment-crypto-weather-nexus.vercel.app/
 
 Features
 
@@ -66,10 +66,8 @@ Deployment: Vercel / Netlify
 
 Installation & Setup
 
-Clone the Repository:
-
-git clone https://github.com/yourusername/cryptoweather-nexus.git
-cd cryptoweather-nexus
+Clone the Repository:https://github.com/avansingh085/Assignment-CryptoWeather-Nexus.git
+cd project
 
 Install Dependencies:
 
@@ -90,15 +88,15 @@ Open http://localhost:3000 in your browser.
 
 Folder Structure
 
-cryptoweather-nexus/
+project/
 ├── public/          # Static assets
 ├── src/
 │   ├── components/  # Reusable UI components
 │   ├── pages/       # Next.js pages (Routing)
 │   ├── layout.js    # Layout component for consistent UI structure
 │   ├── page.js      # Main page component for dashboard
-│   ├── store/       # Redux state management
-│   ├── utils/       # Helper functions
+│   ├── redux/       # Redux state management
+│   ├── services/       # service functions
 │   ├── styles/      # Tailwind CSS styles
 ├── .env.local       # Environment variables
 ├── package.json     # Dependencies and scripts
@@ -113,19 +111,6 @@ Crypto API: Fetches real-time cryptocurrency prices and market data from CoinGec
 News API: Retrieves latest cryptocurrency news articles from NewsData.io.
 
 WebSocket: Uses CoinCap WebSocket to fetch real-time BTC and ETH price updates.
-
-Deployment
-
-Build the Project:
-
-npm run build
-
-Deploy to Vercel:
-
-npm install -g vercel
-vercel
-
-(Follow the instructions to link your project and deploy it successfully.)
 
 Challenges & Solutions
 
@@ -151,7 +136,7 @@ Add user authentication for personalized dashboards.
 
 Author
 
-Avan Singh (Replace with actual profile link if needed)
+Avan Singh 
 
 License
 
