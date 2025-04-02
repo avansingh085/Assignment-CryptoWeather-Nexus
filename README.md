@@ -105,15 +105,16 @@ npm run dev
 
 project/
 ├── public/          # Static assets
-├── src/
-│   ├── components/  # Reusable UI components
-│   ├── pages/       # Next.js pages (Routing)
+├── app/
 │   ├── layout.js    # Layout component for consistent UI structure
 │   ├── page.js      # Main page component for dashboard
-│   ├── redux/       # Redux state management
-│   ├── services/    # API service functions
-│   ├── styles/      # Tailwind CSS styles
-├── .env.local       # Environment variables
+├── components/      # Reusable UI components
+├── city/[id]/page.js  # City details page
+├── crypto/[id]/page.js # Crypto details page
+├── redux/           # Redux state management
+├── services/        # API service functions
+├── styles/          # Tailwind CSS styles
+├── .env             # Environment variables
 ├── package.json     # Dependencies and scripts
 ├── README.md        # Project documentation
 
