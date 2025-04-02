@@ -1,6 +1,6 @@
 export async function fetchNewsData(retries = 5) {
   const apiKey = process.env.NEXT_PUBLIC_CRYPTO_NEWS_API_KEY;
-  const url = `https://newsdata.io/api/1/news?apikey=${apiKey}&q=crypto%20coin%20news&country=in&language=hi&category=education`;
+  const url = `https://newsdata.io/api/1/news?apikey=${apiKey}&q=crypto%20news `;
 
   for (let attempt = 1; attempt <= retries; attempt++) {
     try {
