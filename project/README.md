@@ -95,6 +95,8 @@ cryptoweather-nexus/
 ├── src/
 │   ├── components/  # Reusable UI components
 │   ├── pages/       # Next.js pages (Routing)
+│   ├── layout.js    # Layout component for consistent UI structure
+│   ├── page.js      # Main page component for dashboard
 │   ├── store/       # Redux state management
 │   ├── utils/       # Helper functions
 │   ├── styles/      # Tailwind CSS styles
