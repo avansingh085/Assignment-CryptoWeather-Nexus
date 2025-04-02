@@ -10,9 +10,7 @@ export default function CryptoDetail() {
   const { crypto } = useSelector((state) => state);
   const { id } = useParams(); // Replaces useRouter for App Router
 
-  useEffect(() => {
-    if (id) dispatch(fetchCrypto([id]));
-  }, [id, dispatch]);
+  
 
   const coin = crypto.data.find((c) => c.id === id);
 
