@@ -14,8 +14,10 @@ import { useWebSocket } from '@/services/websocket';
 export default function Dashboard() {
   const dispatch = useDispatch();
   const { weather, crypto, news } = useSelector((state) => state);
-  useWebSocket();
 
+  
+    useWebSocket();
+ 
   const [citySearch, setCitySearch] = useState('');
   const [cryptoSearch, setCryptoSearch] = useState('');
   const [cityInput, setCityInput] = useState('');
@@ -27,10 +29,10 @@ export default function Dashboard() {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 768); // md breakpoint
+      setIsMobile(window.innerWidth < 768); 
     };
     
-    handleResize(); // Initial check
+    handleResize(); 
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);

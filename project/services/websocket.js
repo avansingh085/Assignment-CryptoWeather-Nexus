@@ -5,7 +5,7 @@ import { updateCrypto } from '@/redux/cryptoSlice';
 export function useWebSocket() {
   const dispatch = useDispatch();
   useEffect(() => {
-    const ws = new WebSocket('wss://ws.coincap.io/prices?assets=bitcoin,ethereum,binancecoin');
+    const ws = new WebSocket('wss://ws.coincap.io/prices?assets=ALL');
     ws.onmessage = (event) => {
       const data = JSON.parse(event.data);
       Object.keys(data).forEach((coin) => {
