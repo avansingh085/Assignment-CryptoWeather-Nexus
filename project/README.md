@@ -6,7 +6,7 @@ CryptoWeather Nexus is a modern, multi-page dashboard that integrates real-time 
 
 Live Demo
 
-🔗 Deployed Application
+🔗 Deployed Application  https://assignment-crypto-weather-nexus.vercel.app/
 
 Features
 
