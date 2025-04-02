@@ -8,7 +8,7 @@ export default function NotificationToast() {
   if (!notification) return null;
 
   return (
-    <div className="fixed bottom-4 right-4 bg-gray-700 p-4 rounded-lg shadow-lg">
+    <div className="fixed bottom-4 right-4 bg-green-500 p-4 rounded-lg shadow-lg">
       <p className="text-sm">
         {notification.type === 'price_alert'
           ? `${notification.id} price updated to $${notification.priceUsd}`
